@@ -5,7 +5,7 @@
     <classes>
       <class name="com.sony.msm.test.TestGetContentPostedIn24Hours">
         <methods>
-          <include name="testGetContentOnStartAndLimit" invocation-numbers="3"/>
+          <include name="testGetContentPostedIn24Hours"/>
         </methods>
       </class> <!-- com.sony.msm.test.TestGetContentPostedIn24Hours -->
     </classes>
