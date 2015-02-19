@@ -1,0 +1,24 @@
+####################
+# デフォルト
+####################
+- !com.sony.csx.meta.plugin.framework.thread.ThreadPoolInfo
+    prefix: default
+    poolSize: 300
+#################################################
+# Plugin FW 内のキャッシュスレッド
+################################################
+- !com.sony.csx.meta.plugin.framework.thread.ThreadPoolInfo
+    prefix: plugin-cache
+    poolSize: 600
+#################################################
+# 追加時は以下のコメントを消して、prefix名を変更
+################################################
+- !com.sony.csx.meta.plugin.framework.thread.ThreadPoolInfo
+    prefix: crackle-plugin
+    poolSize: 100
+#################################################
+# 追加時は以下のコメントを消して、prefix名を変更
+################################################
+#- !com.sony.csx.meta.plugin.framework.thread.ThreadPoolInfo
+#    prefix: prefix1
+#    poolSize: 10

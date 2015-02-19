@@ -1,0 +1,23 @@
+dateFormat: yyyy-MM-dd'T'HH:mm:ssZ
+
+allThemeChannelsFeedName: all-theme-channels
+
+themeChannelAssetGetSize: 1
+
+urlTypeJpeg: image/jpeg
+urlTypePng: image/png
+
+themeChannelImageWidth: 120
+themeChannelImageHeight: 120
+
+assetImageThumbnailWidth: 144
+assetImageThumbnailHeight: 81
+
+assetImageSmallWidth: 192
+assetImageSmallHeight: 108
+
+assetImageMediumWidth: 279
+assetImageMediumHeight: 156
+
+# ResultArray name
+allThemeChannelsResultArrayName: AxelSpringer all-theme-channels

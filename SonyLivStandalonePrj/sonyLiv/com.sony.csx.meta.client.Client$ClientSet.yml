@@ -1,0 +1,15 @@
+###
+# Client名と、それに対応する Class のペア
+###
+Android_TV_DUX_Feed:       com.sony.csx.meta.client.AndroidTVDUXFeed
+Android_TV_DUX_Keyword:    com.sony.csx.meta.client.AndroidTVDUXKeyword
+Android_TV_TextSearch:   com.sony.csx.meta.client.AndroidTVTextSearch
+Android_TV_DIAL:   com.sony.csx.meta.client.AndroidTVDial
+AndroidPhone_TVSideView_CrossServiceSearch:   com.sony.csx.meta.client.AndroidPhoneTVSideViewCSS
+AndroidTablet_TVSideView_CrossServiceSearch:   com.sony.csx.meta.client.AndroidTabletTVSideViewCSS
+iPhone_TVSideView_CrossServiceSearch:   com.sony.csx.meta.client.IphoneTVSideViewCSS
+iPad_TVSideView_CrossServiceSearch:   com.sony.csx.meta.client.IpadTVSideViewCSS
+AndroidPhone_TVSideView_TopPicks:   com.sony.csx.meta.client.AndroidPhoneTVSideViewTopPicks
+AndroidTablet_TVSideView_TopPicks:   com.sony.csx.meta.client.AndroidTabletTVSideViewTopPicks
+iPhone_TVSideView_TopPicks:   com.sony.csx.meta.client.IphoneTVSideViewTopPicks
+iPad_TVSideView_TopPicks:   com.sony.csx.meta.client.IpadTVSideViewTopPicks

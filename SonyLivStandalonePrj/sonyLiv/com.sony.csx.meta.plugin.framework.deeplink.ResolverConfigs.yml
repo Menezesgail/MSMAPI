@@ -1,0 +1,28 @@
+#######
+# DeepLinkResolver の選択に使用する設定.
+# 以下のフォーマットに従って記述してください.
+# 設定の上位に記述したものが優先的に DeepLinkResolver として適用されます.
+# 
+# ■ フォーマット: 
+#   {id format}:
+#     {id}: {resolver class name (full)}
+# 
+# ■ 解説 :  
+#   {id format} = supplier/{DeepLinkSeed.Key}/{DeepLinkSeed.Key}...
+#   {id} = {id format} に実際の値を入れた場合の文字列
+#   {resolver class name (full)} = DeepLinkResolver のフルクラス名
+# 
+#######
+#### Obsolute ##
+### {id format} = supplier/platform
+#"supplier/platform":
+#    "youtube/android": "com.sony.csx.meta.deeplink.youtube.YoutubeDeepLinkResolver$Android"
+#    "youtube/biv": "com.sony.csx.meta.deeplink.youtube.YoutubeDeepLinkResolver$Biv"
+#    "youtube/ios": "com.sony.csx.meta.deeplink.youtube.YoutubeDeepLinkResolver$IOS"
+####
+## {id format} = supplier
+"supplier":
+    "youtube": "com.sony.csx.meta.deeplink.youtube.YoutubeDeepLinkResolver2"
+    "crackle": "com.sony.csx.meta.deeplink.crackle.CrackleDeepLinkResolver"
+    "nicovideo": "com.sony.csx.meta.deeplink.niconico.NicoVideoDeepLinkResolver"
+    "axelspringer": "com.sony.csx.meta.deeplink.axelspringer.AxelSpringerDeepLinkResolver"

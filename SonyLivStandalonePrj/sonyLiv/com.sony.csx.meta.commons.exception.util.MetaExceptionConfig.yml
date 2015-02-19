@@ -1,0 +1,177 @@
+##########
+# このクラスを変更したら、MetaExceptionTest.javaを使って文字列を出力し、
+# 出力した文字列を/csx_meta/src/site/markdown/api-rules.mdに張り付けて、
+# API仕様書を更新すること！
+##########
+##########
+#
+# Category
+#
+##########
+MetaInvalidRequestExceptionBase :
+    categoryCode:1
+MetaInternalServerExceptionBase :
+    categoryCode:2
+MetaExternalServiceExceptionBase :
+    categoryCode:3
+MetaCsxInternalResourceExceptionBase :
+    categoryCode:4
+MetaInternalResourceExceptionBase :
+    categoryCode:5
+##########
+#
+# Detail
+# Invalid Request
+#
+##########
+MetaInvalidApiKeyException :
+    status:400
+    errorCode:1
+    message:'Invalid API Key: {0}'
+    logLevel:'warn'
+MetaInvalidRequestException :
+    status:400
+    errorCode:2
+    message:'Invalid Parameter: {0} {1}'
+    logLevel:'warn'
+MetaChannelNotFoundException :
+    status:400
+    errorCode:3
+    message:'Channel ID not found: {0}'
+    logLevel:'warn'
+MetaChannelNotDeleteException :
+    status:400
+    errorCode:4
+    message:'Cannot delete the last channel ID in a channel ID list hash'
+    logLevel:'warn'
+MetaFrontUserIdNotFoundException :
+    status:403
+    errorCode:5
+    message:'MetaFront User ID "{0}" not found or expired'
+    logLevel:'warn'
+MetaNotAllowedException :
+    status:405
+    errorCode:6
+    message:'Method not allowed'
+    logLevel:'warn'
+MetaInvalidHeaderFieldValueException :
+    status:403
+    errorCode:7
+    message:'Invalid header field value: {0}'
+    logLevel:'warn'
+##########
+#
+# Internal Server
+#
+##########
+MetaInternalException :
+    status:500
+    errorCode:1
+    message:'Internal Server Error'
+    logLevel:'error'
+MetaCountryLookUpExecption :
+    status:500
+    errorCode:2
+    message:'Cannot get country code using: {0}'
+    logLevel:'error'
+MetaConfigurationException :
+    status:500
+    errorCode:3
+    message:'get Configuration failed'
+    logLevel:'error'
+MetaUnderMaintenanceException :
+    status:503
+    errorCode:4
+    message:'The service is under maintenance'
+    logLevel:'error'
+##########
+#
+# External Service
+#
+##########
+MetaExternalAuthenticationException :
+    status:401
+    errorCode:1
+    message:'Authentication failed (External Service)'
+    logLevel:'error'
+MetaExternalInvalidRequestException :
+    status:400
+    errorCode:2
+    message:'Invalid Parameter (External Service)'
+    logLevel:'warn'
+MetaExternalInvalidResponseException :
+    status:502
+    errorCode:3
+    message:'Invalid Response (External Service)'
+    logLevel:'warn'
+MetaExternalNetworkException :
+    status:502
+    errorCode:4
+    message:'Network Error (External Service)'
+    logLevel:'error'
+MetaExternalTimeoutException :
+    status:504
+    errorCode:5
+    message:'Timeout error occurred (External Service)'
+    logLevel:'warn'
+MetaExternalServiceUnavailableException :
+    status:503
+    errorCode:6
+    message:'External Service is unavailable'
+    logLevel:'warn'
+MetaExternalObjectNotFoundException :
+    status:404
+    errorCode:7
+    message:'Object not found (External Service)'
+    logLevel:'debug'
+##########
+#
+# Internal resource (CSX)
+#
+##########
+MetaObjectNotFoundException :
+    status:404
+    errorCode:1
+    message:'Object not found: {0}'
+    logLevel:'debug'
+MetaObjectLockedException :
+    status:405
+    errorCode:2
+    message:'Some of the items which was tried to delete were locked'
+    logLevel:'error'
+MetaUserIdNotFoundException :
+    status:400
+    errorCode:3
+    message:'User ID not found'
+    logLevel:'warn'
+MetaCsxInvalidApiKeyException :
+    status:400
+    errorCode:4
+    message:'Invalid API Key (CSX): {0}'
+    logLevel:'warn'
+MetaPluginConfigurationNotFoundException :
+    status:404
+    errorCode:5
+    message:'API not found: {0}'
+    logLevel:'warn'
+MetaPluginNotFoundException :
+    status:404
+    errorCode:6
+    message:'API not found: {0}'
+    logLevel:'error'
+MetaChannelListNotFoundException :
+    status:404
+    errorCode:7
+    message:'Channel list ID not found: {0}'
+    logLevel:'warn'
+##########
+#
+# Internal resource (not CSX)
+#
+##########
+MetaDataNotFoundException :
+    status:500
+    errorCode:1
+    message:'Data not found'
+    logLevel:'error'
+

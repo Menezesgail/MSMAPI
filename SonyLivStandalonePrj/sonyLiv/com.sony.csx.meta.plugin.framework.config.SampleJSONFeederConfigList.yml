@@ -1,0 +1,71 @@
+##############################################################################
+# プラグインの設定について解説.
+# 
+# ファイル名は "com.sony.csx.meta.plugin.framework.config.{任意の名前}.yml" にする.
+# 
+##############################################################################
+#/** 定型文字列. */
+#- !com.sony.csx.meta.plugin.framework.PluginControllerConfig
+#
+#    /**
+#     * プラグインを一意に識別する為のID.
+#     * "com.sony.csx.meta.plugin.framework.ConfigIdGenerator" でIDを確認する事ができます.
+#     * 
+#     * ID が重複すると、先に設定されている物が優先される為、正常に稼働しない可能性があります.
+#     *
+#     * 各 API のIDのフォーマットは以下の通り.
+#     *   feed    : {supplier name}\{feed name}\feed
+#     *   search  : {supplier name}\search
+#     *   content : {supplier name}\{content type}\content
+#     *   image   : {supplier name}\{content type}\image
+#     *     ※ {content type } = work | series | season | contributor | album | track
+#     */
+#    configId: sample\feed1\feed
+#
+#    /**
+#     * プラグインとして実際にコンテンツを取得する為のクラスのフルネーム.
+#     */
+#    executorClass: com.sony.csx.meta.plugin.sample.SamplePlugin
+#
+#    /**
+#     * キャッシュ設定.
+#     * キャッシュの必要がない場合は記述しなくて良い.（cacheStragegy 毎削除で OK.）
+#     */
+#    cacheStragegy:
+#        /** キャッシュの保存先名. (現在非対応) */
+#        typeName: ElasticCache
+#
+#        /** 
+#         * リスト系のレスポンス時に、キャッシュに保存する際のコンテンツの件数
+#         * 例えば、100件取得時に pageSize が 20 の場合、20件 X 5個 に分割してキャッシュする. 
+#         */
+#        pageSize: 20
+#
+#        /** キャッシュの Expre 時間（秒）*/
+#        expireTime: 3600
+#
+#        /** プラグイン実行前にリクエストから先読みして実行するタスク（現在非対応） */
+#        preTask: null
+#
+#        /** プラグイン実行後にリクエストとレスポンスから先読みして実行するタスク（現在非対応） */
+#        postTask: null
+#
+#    /**
+#     * レスポンスを加工する ResponseFilter のリスト.
+#     * "com.sony.csx.meta.plugin.framework.filter.ResponseFilter" interface を implements しているクラスに限ります. 
+#     * ResponseFilter は記述した順に実行されます.
+#     */
+#    responseFilters: 
+#        - com.sony.csx.meta.plugin.framework.filter.ResultArrayDeepLinkGenerator
+#
+############################################################################
+
+
+
+###############################
+# Supplier : SampleJSON
+# type : SampleJSONFeeder
+###############################
+- !com.sony.csx.meta.plugin.framework.PluginControllerConfig
+    configId: SampleJSON\SampleJSONFeeder\feed
+    executorClass: com.sony.csx.meta.plugin.sample.SampleJSONFeeder

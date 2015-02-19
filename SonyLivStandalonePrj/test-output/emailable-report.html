@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Default suite</th></tr><tr><td><a href="#t0">Default test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num">14,380</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest</td><td><a href="#m0">endToEndPaginationTest</a></td><td rowspan="4">1424328898564</td><td rowspan="4">1924</td></tr><tr class="passedeven"><td><a href="#m1">endToEndPaginationTest</a></td></tr><tr class="passedeven"><td><a href="#m2">endToEndPaginationTest</a></td></tr><tr class="passedeven"><td><a href="#m3">endToEndPaginationTest</a></td></tr><tr class="passedeven"><td><a href="#m4">testForException</a></td><td rowspan="1">1424328912432</td><td rowspan="1">86</td></tr><tr class="passedeven"><td><a href="#m5">testForFailedConnections</a></td><td rowspan="5">1424328912523</td><td rowspan="5">12</td></tr><tr class="passedeven"><td><a href="#m6">testForFailedConnections</a></td></tr><tr class="passedeven"><td><a href="#m7">testForFailedConnections</a></td></tr><tr class="passedeven"><td><a href="#m8">testForFailedConnections</a></td></tr><tr class="passedeven"><td><a href="#m9">testForFailedConnections</a></td></tr><tr class="passedeven"><td><a href="#m10">testForTimeOut</a></td><td rowspan="1">1424328912605</td><td rowspan="1">11</td></tr><tr class="passedeven"><td><a href="#m11">testNegativeTrendingVideo</a></td><td rowspan="1">1424328912620</td><td rowspan="1">21</td></tr><tr class="passedeven"><td><a href="#m12">testTrendingVideoMocked</a></td><td rowspan="1">1424328912645</td><td rowspan="1">18</td></tr></tbody></table><h2>Default test</h2><h3 id="m0">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#endToEndPaginationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>0</td><td>5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#endToEndPaginationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>0</td><td>10</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#endToEndPaginationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1</td><td>7</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#endToEndPaginationTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>5</td><td>20</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#testForException</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.sony.csx.meta.commons.exception.MetaInternalException: java.lang.Exception
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:98)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForException(SonyLivTrendingVideosFeederTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: java.lang.Exception
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#testForFailedConnections</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>400</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.sony.csx.meta.commons.exception.MetaExternalInvalidRequestException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:181)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#testForFailedConnections</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>504</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.sony.csx.meta.commons.exception.MetaExternalTimeoutException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:191)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#testForFailedConnections</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>502</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.sony.csx.meta.commons.exception.MetaExternalNetworkException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:188)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#testForFailedConnections</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>500</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.sony.csx.meta.commons.exception.MetaExternalNetworkException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:188)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#testForFailedConnections</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>404</td></tr><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.sony.csx.meta.commons.exception.MetaExternalObjectNotFoundException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:184)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#testForTimeOut</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.sony.csx.meta.commons.exception.MetaExternalTimeoutException: java.io.InterruptedIOException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:95)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForTimeOut(SonyLivTrendingVideosFeederTest.java:162)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: java.io.InterruptedIOException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#testNegativeTrendingVideo</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m12">com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest#testTrendingVideoMocked</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

@@ -1,0 +1,71 @@
+##############################################################################
+# ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã�®è¨­å®šã�«ã�¤ã�„ã�¦è§£èª¬.
+# 
+# ãƒ•ã‚¡ã‚¤ãƒ«å��ã�¯ "com.sony.csx.meta.plugin.framework.config.{ä»»æ„�ã�®å��å‰�}.yml" ã�«ã�™ã‚‹.
+# 
+##############################################################################
+#/** å®šåž‹æ–‡å­—åˆ—. */
+#- !com.sony.csx.meta.plugin.framework.PluginControllerConfig
+#
+#    /**
+#     * ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã‚’ä¸€æ„�ã�«è­˜åˆ¥ã�™ã‚‹ç‚ºã�®ID.
+#     * "com.sony.csx.meta.plugin.framework.ConfigIdGenerator" ã�§IDã‚’ç¢ºèª�ã�™ã‚‹äº‹ã�Œã�§ã��ã�¾ã�™.
+#     * 
+#     * ID ã�Œé‡�è¤‡ã�™ã‚‹ã�¨ã€�å…ˆã�«è¨­å®šã�•ã‚Œã�¦ã�„ã‚‹ç‰©ã�Œå„ªå…ˆã�•ã‚Œã‚‹ç‚ºã€�æ­£å¸¸ã�«ç¨¼åƒ�ã�—ã�ªã�„å�¯èƒ½æ€§ã�Œã�‚ã‚Šã�¾ã�™.
+#     *
+#     * å�„ API ã�®IDã�®ãƒ•ã‚©ãƒ¼ãƒžãƒƒãƒˆã�¯ä»¥ä¸‹ã�®é€šã‚Š.
+#     *   feed    : {supplier name}\{feed name}\feed
+#     *   search  : {supplier name}\search
+#     *   content : {supplier name}\{content type}\content
+#     *   image   : {supplier name}\{content type}\image
+#     *     â€» {content type } = work | series | season | contributor | album | track
+#     */
+#    configId: sample\feed1\feed
+#
+#    /**
+#     * ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã�¨ã�—ã�¦å®Ÿéš›ã�«ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã‚’å�–å¾—ã�™ã‚‹ç‚ºã�®ã‚¯ãƒ©ã‚¹ã�®ãƒ•ãƒ«ãƒ�ãƒ¼ãƒ .
+#     */
+#    executorClass: com.sony.csx.meta.plugin.sample.SamplePlugin
+#
+#    /**
+#     * ã‚­ãƒ£ãƒƒã‚·ãƒ¥è¨­å®š.
+#     * ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã�®å¿…è¦�ã�Œã�ªã�„å ´å�ˆã�¯è¨˜è¿°ã�—ã�ªã��ã�¦è‰¯ã�„.ï¼ˆcacheStragegy æ¯Žå‰Šé™¤ã�§ OK.ï¼‰
+#     */
+#    cacheStragegy:
+#        /** ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã�®ä¿�å­˜å…ˆå��. (ç�¾åœ¨é�žå¯¾å¿œ) */
+#        typeName: ElasticCache
+#
+#        /** 
+#         * ãƒªã‚¹ãƒˆç³»ã�®ãƒ¬ã‚¹ãƒ�ãƒ³ã‚¹æ™‚ã�«ã€�ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã�«ä¿�å­˜ã�™ã‚‹éš›ã�®ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ã�®ä»¶æ•°
+#         * ä¾‹ã�ˆã�°ã€�100ä»¶å�–å¾—æ™‚ã�« pageSize ã�Œ 20 ã�®å ´å�ˆã€�20ä»¶ X 5å€‹ ã�«åˆ†å‰²ã�—ã�¦ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã�™ã‚‹. 
+#         */
+#        pageSize: 20
+#
+#        /** ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã�® Expre æ™‚é–“ï¼ˆç§’ï¼‰*/
+#        expireTime: 3600
+#
+#        /** ãƒ—ãƒ©ã‚°ã‚¤ãƒ³å®Ÿè¡Œå‰�ã�«ãƒªã‚¯ã‚¨ã‚¹ãƒˆã�‹ã‚‰å…ˆèª­ã�¿ã�—ã�¦å®Ÿè¡Œã�™ã‚‹ã‚¿ã‚¹ã‚¯ï¼ˆç�¾åœ¨é�žå¯¾å¿œï¼‰ */
+#        preTask: null
+#
+#        /** ãƒ—ãƒ©ã‚°ã‚¤ãƒ³å®Ÿè¡Œå¾Œã�«ãƒªã‚¯ã‚¨ã‚¹ãƒˆã�¨ãƒ¬ã‚¹ãƒ�ãƒ³ã‚¹ã�‹ã‚‰å…ˆèª­ã�¿ã�—ã�¦å®Ÿè¡Œã�™ã‚‹ã‚¿ã‚¹ã‚¯ï¼ˆç�¾åœ¨é�žå¯¾å¿œï¼‰ */
+#        postTask: null
+#
+#    /**
+#     * ãƒ¬ã‚¹ãƒ�ãƒ³ã‚¹ã‚’åŠ å·¥ã�™ã‚‹ ResponseFilter ã�®ãƒªã‚¹ãƒˆ.
+#     * "com.sony.csx.meta.plugin.framework.filter.ResponseFilter" interface ã‚’ implements ã�—ã�¦ã�„ã‚‹ã‚¯ãƒ©ã‚¹ã�«é™�ã‚Šã�¾ã�™. 
+#     * ResponseFilter ã�¯è¨˜è¿°ã�—ã�Ÿé †ã�«å®Ÿè¡Œã�•ã‚Œã�¾ã�™.
+#     */
+#    responseFilters: 
+#        - com.sony.csx.meta.plugin.framework.filter.ResultArrayDeepLinkGenerator
+#
+############################################################################
+
+
+
+###############################
+# Supplier : sonyliv
+# type : TrendingVideos
+###############################
+- !com.sony.csx.meta.plugin.framework.PluginControllerConfig
+    configId: sonyliv\trending-videos\feed
+    executorClass: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder

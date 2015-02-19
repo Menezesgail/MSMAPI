@@ -1,0 +1,6 @@
+host: meta.csx.sony.co.jp
+port: 6379
+expirationSeconds: 21600
+database: 0
+retryCount: 2
+retrySleep: 100

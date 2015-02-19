@@ -1,0 +1,287 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 19 12:24:58 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>14 seconds (14380 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.endToEndPaginationTest()'><b>endToEndPaginationTest</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest<br>Parameters: 0, 5</td>
+<td></td>
+<td>1</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.endToEndPaginationTest()'><b>endToEndPaginationTest</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest<br>Parameters: 1, 7</td>
+<td></td>
+<td>4</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.endToEndPaginationTest()'><b>endToEndPaginationTest</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest<br>Parameters: 0, 10</td>
+<td></td>
+<td>4</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.endToEndPaginationTest()'><b>endToEndPaginationTest</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest<br>Parameters: 5, 20</td>
+<td></td>
+<td>2</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForException()'><b>testForException</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest</td>
+<td><div><pre>com.sony.csx.meta.commons.exception.MetaInternalException: java.lang.Exception
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:98)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForException(SonyLivTrendingVideosFeederTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: java.lang.Exception
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1677055599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1677055599'><pre>com.sony.csx.meta.commons.exception.MetaInternalException: java.lang.Exception
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:98)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForException(SonyLivTrendingVideosFeederTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: java.lang.Exception
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div></td>
+<td>0</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections()'><b>testForFailedConnections</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest<br>Parameters: 400</td>
+<td><div><pre>com.sony.csx.meta.commons.exception.MetaExternalInvalidRequestException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:181)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1460698832", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1460698832'><pre>com.sony.csx.meta.commons.exception.MetaExternalInvalidRequestException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:181)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div></td>
+<td>0</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections()'><b>testForFailedConnections</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest<br>Parameters: 404</td>
+<td><div><pre>com.sony.csx.meta.commons.exception.MetaExternalObjectNotFoundException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:184)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1303826571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1303826571'><pre>com.sony.csx.meta.commons.exception.MetaExternalObjectNotFoundException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:184)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div></td>
+<td>0</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections()'><b>testForFailedConnections</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest<br>Parameters: 500</td>
+<td><div><pre>com.sony.csx.meta.commons.exception.MetaExternalNetworkException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:188)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1576729871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1576729871'><pre>com.sony.csx.meta.commons.exception.MetaExternalNetworkException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:188)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div></td>
+<td>0</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections()'><b>testForFailedConnections</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest<br>Parameters: 502</td>
+<td><div><pre>com.sony.csx.meta.commons.exception.MetaExternalNetworkException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:188)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1086682414", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1086682414'><pre>com.sony.csx.meta.commons.exception.MetaExternalNetworkException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:188)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div></td>
+<td>0</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections()'><b>testForFailedConnections</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest<br>Parameters: 504</td>
+<td><div><pre>com.sony.csx.meta.commons.exception.MetaExternalTimeoutException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:191)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1695913294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1695913294'><pre>com.sony.csx.meta.commons.exception.MetaExternalTimeoutException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:191)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div></td>
+<td>0</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForTimeOut()'><b>testForTimeOut</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest</td>
+<td><div><pre>com.sony.csx.meta.commons.exception.MetaExternalTimeoutException: java.io.InterruptedIOException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:95)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForTimeOut(SonyLivTrendingVideosFeederTest.java:162)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: java.io.InterruptedIOException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace521596707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace521596707'><pre>com.sony.csx.meta.commons.exception.MetaExternalTimeoutException: java.io.InterruptedIOException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:95)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForTimeOut(SonyLivTrendingVideosFeederTest.java:162)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: java.io.InterruptedIOException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+</pre></div></td>
+<td>0</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testNegativeTrendingVideo()'><b>testNegativeTrendingVideo</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest</td>
+<td></td>
+<td>0</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+<tr>
+<td title='com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testTrendingVideoMocked()'><b>testTrendingVideoMocked</b><br>Test class: com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest</td>
+<td></td>
+<td>0</td>
+<td>com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d</td></tr>
+</table><p>
+</body>
+</html>

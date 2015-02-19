@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14380" started-at="2015-02-19T06:54:58Z" finished-at="2015-02-19T06:55:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14380" started-at="2015-02-19T06:54:58Z" finished-at="2015-02-19T06:55:12Z">
+      <class name="com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest">
+        <test-method status="PASS" signature="testInit()[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testInit" is-config="true" duration-ms="266" started-at="2015-02-19T12:24:58Z" finished-at="2015-02-19T12:24:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInit -->
+        <test-method status="PASS" signature="endToEndPaginationTest(int, int)[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="endToEndPaginationTest" duration-ms="1924" started-at="2015-02-19T12:24:58Z" data-provider="paginationDataProvider" finished-at="2015-02-19T12:25:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToEndPaginationTest -->
+        <test-method status="PASS" signature="endToEndPaginationTest(int, int)[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="endToEndPaginationTest" duration-ms="4640" started-at="2015-02-19T12:25:00Z" data-provider="paginationDataProvider" finished-at="2015-02-19T12:25:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToEndPaginationTest -->
+        <test-method status="PASS" signature="endToEndPaginationTest(int, int)[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="endToEndPaginationTest" duration-ms="4388" started-at="2015-02-19T12:25:05Z" data-provider="paginationDataProvider" finished-at="2015-02-19T12:25:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToEndPaginationTest -->
+        <test-method status="PASS" signature="endToEndPaginationTest(int, int)[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="endToEndPaginationTest" duration-ms="2909" started-at="2015-02-19T12:25:09Z" data-provider="paginationDataProvider" finished-at="2015-02-19T12:25:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToEndPaginationTest -->
+        <test-method status="PASS" signature="testForException()[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testForException" duration-ms="86" started-at="2015-02-19T12:25:12Z" finished-at="2015-02-19T12:25:12Z">
+          <exception class="com.sony.csx.meta.commons.exception.MetaInternalException">
+            <message>
+              <![CDATA[java.lang.Exception]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.sony.csx.meta.commons.exception.MetaInternalException: java.lang.Exception
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:98)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForException(SonyLivTrendingVideosFeederTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: java.lang.Exception
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.sony.csx.meta.commons.exception.MetaInternalException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForException -->
+        <test-method status="PASS" signature="testForFailedConnections(int)[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testForFailedConnections" duration-ms="12" started-at="2015-02-19T12:25:12Z" data-provider="Exception" finished-at="2015-02-19T12:25:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[400]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.sony.csx.meta.commons.exception.MetaExternalInvalidRequestException">
+            <message>
+              <![CDATA[com.sony.csx.meta.commons.http.HttpDownloaderException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.sony.csx.meta.commons.exception.MetaExternalInvalidRequestException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:181)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.sony.csx.meta.commons.exception.MetaExternalInvalidRequestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForFailedConnections -->
+        <test-method status="PASS" signature="testForFailedConnections(int)[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testForFailedConnections" duration-ms="10" started-at="2015-02-19T12:25:12Z" data-provider="Exception" finished-at="2015-02-19T12:25:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[404]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.sony.csx.meta.commons.exception.MetaExternalObjectNotFoundException">
+            <message>
+              <![CDATA[com.sony.csx.meta.commons.http.HttpDownloaderException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.sony.csx.meta.commons.exception.MetaExternalObjectNotFoundException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:184)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.sony.csx.meta.commons.exception.MetaExternalObjectNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForFailedConnections -->
+        <test-method status="PASS" signature="testForFailedConnections(int)[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testForFailedConnections" duration-ms="10" started-at="2015-02-19T12:25:12Z" data-provider="Exception" finished-at="2015-02-19T12:25:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.sony.csx.meta.commons.exception.MetaExternalNetworkException">
+            <message>
+              <![CDATA[com.sony.csx.meta.commons.http.HttpDownloaderException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.sony.csx.meta.commons.exception.MetaExternalNetworkException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:188)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.sony.csx.meta.commons.exception.MetaExternalNetworkException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForFailedConnections -->
+        <test-method status="PASS" signature="testForFailedConnections(int)[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testForFailedConnections" duration-ms="10" started-at="2015-02-19T12:25:12Z" data-provider="Exception" finished-at="2015-02-19T12:25:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[502]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.sony.csx.meta.commons.exception.MetaExternalNetworkException">
+            <message>
+              <![CDATA[com.sony.csx.meta.commons.http.HttpDownloaderException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.sony.csx.meta.commons.exception.MetaExternalNetworkException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:188)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.sony.csx.meta.commons.exception.MetaExternalNetworkException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForFailedConnections -->
+        <test-method status="PASS" signature="testForFailedConnections(int)[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testForFailedConnections" duration-ms="22" started-at="2015-02-19T12:25:12Z" data-provider="Exception" finished-at="2015-02-19T12:25:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[504]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.sony.csx.meta.commons.exception.MetaExternalTimeoutException">
+            <message>
+              <![CDATA[com.sony.csx.meta.commons.http.HttpDownloaderException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.sony.csx.meta.commons.exception.MetaExternalTimeoutException: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.exceptionMapper(SonyLivTrendingVideosFeeder.java:191)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:92)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForFailedConnections(SonyLivTrendingVideosFeederTest.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: com.sony.csx.meta.commons.http.HttpDownloaderException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.sony.csx.meta.commons.exception.MetaExternalTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForFailedConnections -->
+        <test-method status="PASS" signature="testForTimeOut()[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testForTimeOut" duration-ms="11" started-at="2015-02-19T12:25:12Z" finished-at="2015-02-19T12:25:12Z">
+          <exception class="com.sony.csx.meta.commons.exception.MetaExternalTimeoutException">
+            <message>
+              <![CDATA[java.io.InterruptedIOException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.sony.csx.meta.commons.exception.MetaExternalTimeoutException: java.io.InterruptedIOException
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:95)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest.testForTimeOut(SonyLivTrendingVideosFeederTest.java:162)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+Caused by: java.io.InterruptedIOException
+	at com.sony.csx.meta.commons.http.HttpDownloader.httpGet(HttpDownloader.java)
+	at com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeeder.feed(SonyLivTrendingVideosFeeder.java:80)
+	... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.sony.csx.meta.commons.exception.MetaExternalTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForTimeOut -->
+        <test-method status="PASS" signature="testNegativeTrendingVideo()[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testNegativeTrendingVideo" duration-ms="21" started-at="2015-02-19T12:25:12Z" finished-at="2015-02-19T12:25:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeTrendingVideo -->
+        <test-method status="PASS" signature="testTrendingVideoMocked()[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testTrendingVideoMocked" duration-ms="18" started-at="2015-02-19T12:25:12Z" finished-at="2015-02-19T12:25:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTrendingVideoMocked -->
+        <test-method status="PASS" signature="testShutdown()[pri:0, instance:com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest@993509d]" name="testShutdown" is-config="true" duration-ms="1" started-at="2015-02-19T12:25:12Z" finished-at="2015-02-19T12:25:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShutdown -->
+      </class> <!-- com.sony.csx.meta.plugin.sonyliv.SonyLivTrendingVideosFeederTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
